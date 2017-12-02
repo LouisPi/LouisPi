@@ -77,14 +77,11 @@ def scan():
 
 box = Box(app, layout = "grid")
 
-button_one = PushButton(box, command = scan, icon='/home/pi/LouisPi/pictures/test.gif', grid = [0,0])
+button_one = PushButton(box, command = scan, icon='/home/pi/LouisPi/pictures/scan.gif', grid = [0,0])
 
 button_two = PushButton(box, command = setup, icon='/home/pi/LouisPi/pictures/rfid_setup.gif', grid = [1,0])
-# button_two.config(height=50, width=50)
 
-button_three = PushButton(box, command = test, grid = [1,1])
-button_three.set_text("Test")
-button_three.config(height=50, width=50)
+button_three = PushButton(box, command = test, icon='/home/pi/LouisPi/pictures/settings.gif', grid = [1,1])
 
 app.on_close(do_this_on_close)
 
